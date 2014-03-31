@@ -204,9 +204,9 @@ Grid.prototype.move = function (direction) {
           score += merged.value;
 
           // The mighty 2048 tile
-          if (merged.value === 2048) {
-            won = true;
-          }
+          //if (merged.value === 2048) {
+          //  won = true;
+          //}
         } else {
           //if (debug) {
             //console.log(cell);
@@ -565,15 +565,15 @@ Grid.prototype.valueSum = function() {
 // check for win
 Grid.prototype.isWin = function() {
   var self = this;
-  for (var x=0; x<4; x++) {
-    for (var y=0; y<4; y++) {
-      if (self.cellOccupied(this.indexes[x][y])) {
-        if (self.cellContent(this.indexes[x][y]).value == 2048) {
-          return true;
-        }
-      }
-    }
-  }
+  //for (var x=0; x<4; x++) {
+  //  for (var y=0; y<4; y++) {
+  //    if (self.cellOccupied(this.indexes[x][y])) {
+  //      if (self.cellContent(this.indexes[x][y]).value == 2048) {
+  //        return true;
+  //      }
+  //    }
+  //  }
+  //}
   return false;
 }
 
